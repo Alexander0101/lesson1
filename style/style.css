@@ -1,21 +1,120 @@
+@font-face {
+    src: url('../fonts/trebuc.ttf') format('truetype');
+    font-family: 'Trebuchet MS';
+}
+
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-li {
-	list-style: none;
-}
-
-a {
-	text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-	font-size: 18px;
-	background: yellow;
+    padding-top: 220px;
+    min-height: 100vh;
+    font-size: 12px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #848484;
+    background: #fff;
 }
 
+.holder::after {
+    content: '';
+    display: block;
+    clear: both;
+}
 
+ul {
+    list-style: none;
+}
 
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #696161;
+}
+
+a {
+    color: #848484;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 120px;
+    width: 100%;
+    padding-top: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fff;
+}
+
+.wrapper {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+header a.logo {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 51px;
+    color: #313131;
+}
+
+header a.logo span {
+    color: #595959;
+}
+
+header a.logo span::after {
+    content: '';
+    position: relative;
+    right: 4px;
+    top: 2px;
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background: #6dd035;
+}
+
+header nav a {
+    display: inline-block;
+    line-height: 36px;
+    font-size: 24px;
+    color: #333;
+    margin-left: 6px;
+    padding: 0 22px;
+    transition: all 0.3s;
+}
+
+header nav a:hover {
+    color: #fff;
+    background: #373737;
+}
+
+header nav {
+    float: right;
+    padding-top: 15px;
+}
+
+.banner {
+    text-align: center;
+}
